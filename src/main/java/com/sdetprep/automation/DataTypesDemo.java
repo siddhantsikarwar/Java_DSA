@@ -1,25 +1,31 @@
 package com.sdetprep.automation;
 
 public class DataTypesDemo {
-    int age= 19;
-    int dadAge = 65 ;
-    String name = "Ratan" ;
-    int[] numPool= {1,2,3,4,5,6};
+    private int age = 19;
+    private int fatherAge = 65;
+    private String name = "Ratan";
+    private int[] numPool = {1, 2, 3, 4, 5, 6};
 
-    int ageDiff = dadAge - age;
-
-    int getAgeDiff(){
-        return ageDiff ;
+    int getAgeDiff() {
+        return fatherAge - age;  // Calculate directly
     }
-    int sum=0;
-    int getSumPool(){
-        for (int num:numPool){
-            sum= sum+=num;
+
+    int getSumPool() {
+        int sum = 0;  // Reset sum each time the method is called
+        for (int num : numPool) {
+            sum += num;
         }
         return sum;
     }
-    String getFullName(){
-        return name.concat("Tata");
+
+    String getFullName() {
+        return name.concat(" Tata");  // Add a space before concatenation for readability
     }
 
+    void printNumPool() {
+        for (int num : numPool) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
 }
