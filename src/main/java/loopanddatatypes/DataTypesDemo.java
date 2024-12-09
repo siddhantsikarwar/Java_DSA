@@ -1,4 +1,4 @@
-package com.sdetprep.automation;
+package loopanddatatypes;
 
 public class DataTypesDemo {
     private int age = 19;
