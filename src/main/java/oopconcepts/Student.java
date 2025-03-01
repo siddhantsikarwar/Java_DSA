@@ -18,6 +18,7 @@ public class Student extends Person {
         this.grade = grade;
     }
 
+
     @Override
     public void displayDetails() {
         System.out.println("Student's details are - Name: " + getName() + ", Age: " + getAge() + ", Grade: " + getGrade());
